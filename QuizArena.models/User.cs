@@ -9,5 +9,6 @@ namespace QuizArena.Models
 {
     public class User : IdentityUser
     {
+
     }
 }

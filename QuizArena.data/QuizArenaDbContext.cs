@@ -24,6 +24,8 @@ namespace QuizArena.Data
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<QuizArenaDbContext, Configuration>());
         }
 
-        public IDbSet<Question> Questions { get; set; }
+        public virtual IDbSet<Answer> Answers { get; set; }
+        public virtual IDbSet<Category> Categories { get; set; }
+        public virtual IDbSet<Question> Questions { get; set; }
     }
 }
